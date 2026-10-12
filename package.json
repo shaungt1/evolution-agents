@@ -1,0 +1,12 @@
+{
+  "name": "evolution-agents",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Source and test foundation for a supervisor-led, provider-independent project evolution system.",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "check": "node scripts/check.cjs",
+    "test": "node --test tests/unit/*.test.cjs"
+  }
+}

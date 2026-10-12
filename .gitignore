@@ -1,0 +1,7 @@
+# Private planning, backups, credentials, and owner-managed tooling.
+.admin-local/
+node_modules/
+# Generated provider-test output and extension packages.
+tests/.output/
+extensions/vscode/.build/
+*.vsix

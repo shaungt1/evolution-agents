@@ -1,0 +1,52 @@
+{
+  "name": "evolution-agents",
+  "displayName": "Evolution Agents",
+  "description": "Experimental VS Code session adapter for the Evolution Agents project.",
+  "version": "0.3.0",
+  "preview": true,
+  "publisher": "frontside",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onUri",
+    "onCommand:evolutionAgents.experimental.openClaude",
+    "onCommand:evolutionAgents.experimental.openCodex",
+    "onCommand:evolutionAgents.experimental.openCopilot",
+    "onCommand:evolutionAgents.experimental.helloClaude",
+    "onCommand:evolutionAgents.experimental.helloCodex",
+    "onCommand:evolutionAgents.experimental.helloCopilot"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "evolutionAgents.experimental.openClaude",
+        "title": "Evolution Agents: Experimental Claude Session"
+      },
+      {
+        "command": "evolutionAgents.experimental.openCodex",
+        "title": "Evolution Agents: Experimental Codex Session"
+      },
+      {
+        "command": "evolutionAgents.experimental.openCopilot",
+        "title": "Evolution Agents: Experimental Copilot Session"
+      },
+      {
+        "command": "evolutionAgents.experimental.helloClaude",
+        "title": "Evolution Agents: Experimental Claude Smoke Test"
+      },
+      {
+        "command": "evolutionAgents.experimental.helloCodex",
+        "title": "Evolution Agents: Experimental Codex Smoke Test"
+      },
+      {
+        "command": "evolutionAgents.experimental.helloCopilot",
+        "title": "Evolution Agents: Experimental Copilot Smoke Test"
+      }
+    ]
+  }
+}
